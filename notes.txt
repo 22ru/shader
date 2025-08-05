@@ -1,0 +1,11 @@
+glsl-canvas specifics:
+-won't let you declare the version
+-uniform names: https://github.com/patriciogonzalezvivo/glslViewer/wiki/GlslViewer-UNIFORMS
+-vec4 gl_FragCoord and vec4 gl_FragColor are the in/out variables
+-gl_FragCoord will let you access (at least) x,y. you can access more letters but I have no idea what they signify
+-main can take no arguments
+
+vec4 (red,green,blue,alpha), where 1 is maximum
+MUST explicitly make every number a float. super annoying.
+fragcoord and fragcolor are not uniforms because they vary by pixel. uniforms are constant per pixel.
+

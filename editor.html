@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Shader Editor</title>
+
+    <!--
+    https://github.com/patriciogonzalezvivo/glslEditor
+    lots of options listed here!
+    -->
+
+    <link type="text/css" rel="stylesheet" href="https://patriciogonzalezvivo.github.io/glslEditor/build/glslEditor.css">
+    <script type="application/javascript" src="https://patriciogonzalezvivo.github.io/glslEditor/build/glslEditor.js"></script>
+    
+    <style>
+        body {
+            background-color: rgb(39, 40, 34);
+        }
+        #glsl_editor {
+            height: 98vh;
+            width: 99vw;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="glsl_editor"></div>
+</body>
+
+<script type="text/javascript">
+    const glslEditor = new GlslEditor('#glsl_editor', { 
+        canvas_size: 500,
+        canvas_draggable: true,
+        theme: 'monokai',
+        multipleBuffers: true,
+        watchHash: true,
+        fileDrops: true,
+        menu: true
+    });
+</script>
